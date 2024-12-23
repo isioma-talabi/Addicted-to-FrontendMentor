@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.intro-slide {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #357832;
+}
+/* Intro Text Styles */
+.first-container {
+    border-bottom: 2px solid black;
+}
+
+.intro-text {
+  display: grid;
+  place-content: center start; /* Center vertically, align to the left */
+  height: 100vh; /* Full height of the viewport */
+  padding-left: 20px;
+}
+
+.github-icon {
+  width: 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+.name {
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.intro-subtext {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Intro Illustration Styles */
+
+.intro-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  border-left: 2px solid black;
+}
+
+.illustrations {
+  height: 300px;
+  
+}
+
+.image-one {
+  background-color: #357832;
+}
+
+.image-two {
+  background-color: #1392d3;
+}
+
+.image-three {
+  background-color: #642648;
+}
+
+.image-four {
+  background-color: #ffb632;
+}
+
+.image-one,
+.image-two,
+.image-three,
+.image-four {
+  display: grid;
+  place-items: center; /* Centers both horizontally and vertically */
+}
