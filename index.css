@@ -16,22 +16,22 @@ body {
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: #357832;
+  color: #357832;
 }
 /* Intro Text Styles */
 .first-container {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .intro-text {
   display: grid;
   place-content: center start; /* Center vertically, align to the left */
   height: 100vh; /* Full height of the viewport */
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .github-icon {
@@ -67,7 +67,6 @@ h1 {
 
 .illustrations {
   height: 300px;
-  
 }
 
 .image-one {
@@ -92,4 +91,45 @@ h1 {
 .image-four {
   display: grid;
   place-items: center; /* Centers both horizontally and vertically */
+}
+
+/* Challenge One Comtainer */
+.challenge-one-container {
+  display: grid;
+  grid-template-columns: 2.05fr 1fr;
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+.c-one-image {
+  background-color: #2d7dfa;
+  display: grid;
+  place-content: center center;
+  border-right: 2px solid black;
+}
+
+.challenge-one-image {
+  height: 500px;
+  border-radius: 5px;
+}
+
+.c-one-text {
+  display: grid;
+  place-content: center;
+  padding-left: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.viewlink {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text {
+    line-height: 1.5rem;
 }
