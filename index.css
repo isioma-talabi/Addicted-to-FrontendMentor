@@ -93,7 +93,7 @@ h1 {
   place-items: center; /* Centers both horizontally and vertically */
 }
 
-/* Challenge One Comtainer */
+/* Challenge One Container */
 .challenge-one-container {
   display: grid;
   grid-template-columns: 2.05fr 1fr;
@@ -126,10 +126,37 @@ h2 {
 }
 
 .viewlink {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .text {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+/* Challenge Two Container */
+
+.challenge-two-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+.c-two-image {
+  border-left: 2px solid black;
+  background-color: #F4D04E;
+  display: grid;
+  place-content: center center;
+}
+
+.challenge-two-image {
+  object-fit: contain;
+  height: 500px;
+}
+
+.c-two-text {
+  display: grid;
+  place-content: center;
+  text-align: center;
 }

@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: #f4d04e;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Figtree;
+}
+
+.card-container {
+  background-color: white;
+  width: 384px;
+  height: 522px;
+  display: flex;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px #111111;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+span {
+  background-color: #f4d04e;
+  width: 82px;
+  padding: 4px 12px 4px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 24px;
+  border-radius: 4px;
+}
+
+.card-date {
+  font-weight: 500;
+  font-size: 14px;
+  margin-block: 12px;
+}
+
+h1 {
+  margin-block: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.card-details {
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 150%;
+  margin-block: 0;
+}
+
+.card-avatar {
+  display: flex;
+  margin-top: 24px;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.avatar-name {
+  margin-block: 0;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: center;
+}
