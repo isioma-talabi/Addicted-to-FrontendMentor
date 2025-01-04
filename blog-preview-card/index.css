@@ -21,7 +21,7 @@ body {
 
 .card-container {
   background-color: white;
-  width: 384px;
+  max-width: 384px;
   height: 522px;
   display: flex;
   padding: 24px;
