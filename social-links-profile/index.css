@@ -84,6 +84,7 @@ p {
 .button-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -104,3 +105,41 @@ button:hover {
   background-color: #c4f82a;
   color: #333333;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .social-links-container {
+    width: 456px;
+  }
+
+  button {
+    width: 376px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .social-links-container {
+    width: 327px;
+  }
+  button {
+    width: 279px;
+  }
+
+  .intro-text {
+    /* width: 279px; */
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .social-links-container {
+    width: 356px;
+  }
+
+  button {
+    width: 276px;
+  }
+}
+
