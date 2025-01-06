@@ -39,8 +39,11 @@ main {
 .avatar {
   width: 88px;
   height: 88px;
-  display: flex;
+  /* display: flex;
+  justify-self: center; */
+  display: grid;
   justify-self: center;
+  align-self: center;
   border-radius: 50px;
   margin-bottom: 24px;
 }
@@ -142,4 +145,3 @@ button:hover {
     width: 276px;
   }
 }
-
