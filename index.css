@@ -161,6 +161,33 @@ h2 {
   text-align: center;
 }
 
+/* Challenge Three Container */
+.challenge-three-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+.c-three-image {
+  background-color: #141414;
+  display: grid;
+  place-content: center center;
+  border-right: 2px solid black;
+}
+
+.challenge-three-image {
+  height: 800px;
+  border-radius: 5px;
+}
+
+.c-three-text {
+  display: grid;
+  place-content: center;
+  padding-left: 50px;
+  text-align: center;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
@@ -207,5 +234,18 @@ h2 {
 
   .c-two-image {
     border-left: none;
+  }
+
+  .challenge-three-container {
+    grid-template-columns: 1fr;
+    height: 1000px;
+  }
+
+  .challenge-three-image {
+    height: 400px;
+  }
+
+  .c-three-text {
+    padding-left: 0;
   }
 }
