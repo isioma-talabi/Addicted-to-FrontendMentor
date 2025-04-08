@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+}
+
+img {
+  width: 100vw;
+  object-fit: contain;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", sans-serif;
+}
+
+h1 {
+  margin: 0 0;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 24px;
+  line-height: 100%;
+}
+
+.intro-text {
+  padding-bottom: 32px;
+  line-height: 150%;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0 0;
+  font-size: 28px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #854632;
+}
+
+h3 {
+  margin: 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7a284e;
+  padding-bottom: 16px;
+}
+
+p {
+  margin: 0;
+  color: #5f564d;
+}
+
+hr {
+  margin: 0 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: #e3ddd7;
+  height: 1px;
+  border: none;
+}
+
+main {
+  padding: 40px 32px;
+}
+
+ul {
+  margin: 0 0;
+  /* list-style-position: outside; */
+  /* padding-left: 8px; */
+}
+
+ol {
+  margin: 0 0;
+}
+
+li {
+  color: #5f564d;
+  line-height: 150%;
+  padding-left: 1em;
+}
+
+li:not(:last-child) {
+  padding-bottom: 8px;
+}
+
+.preparation-time {
+  padding: 24px;
+  background-color: #fff7fb;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.pt-ul {
+  padding-left: 20px;
+}
+
+.ing-ul {
+  padding-left: 24px;
+}
+
+.inst-ol {
+  padding-left: 24px;
+}
+
+.pt-ul > li::marker {
+  color: #7a284e;
+}
+
+.ing-ul > li::marker {
+  color: #854632;
+}
+
+.inst-ol > li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
+.nutri-text {
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+.nut-hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nutrition-data {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.nutrition-data > p {
+    width: 60px;
+}
+
+.nutrition-data > b {
+    margin-left: 80px;
+    color: #854632;
+}
