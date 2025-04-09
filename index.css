@@ -188,6 +188,14 @@ h2 {
   text-align: center;
 }
 
+/* Challenge Four Container */
+.c-four-image {
+  background-color: #f3e5d7;
+  border-left: 2px solid black;
+  display: grid;
+  place-content: center center;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
@@ -247,5 +255,9 @@ h2 {
 
   .c-three-text {
     padding-left: 0;
+  }
+
+  .c-four-image {
+    border-left: none;
   }
 }
