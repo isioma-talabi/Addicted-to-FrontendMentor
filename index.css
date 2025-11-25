@@ -9,6 +9,9 @@ body {
   font-family: "Plus Jakarta Sans", serif;
 }
 
+/* -------------------------------------------------- */
+/* Home page container */
+
 .intro-slide {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -93,13 +96,32 @@ h1 {
   place-items: center; /* Centers both horizontally and vertically */
 }
 
-/* Challenge One Container */
-.challenge-one-container {
+/* -------------------------------------- */
+
+/* Alternating Containers */
+.first-alt-container {
   display: grid;
   grid-template-columns: 2.05fr 1fr;
   height: 100vh;
   border-bottom: 2px solid black;
 }
+
+.second-alt-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+/* -------------------------------------- */
+
+/* Challenge One Container */
+/* .challenge-one-container {
+  display: grid;
+  grid-template-columns: 2.05fr 1fr;
+  height: 100vh;
+  border-bottom: 2px solid black;
+} */
 
 .c-one-image {
   background-color: #2d7dfa;
@@ -136,12 +158,12 @@ h2 {
 
 /* Challenge Two Container */
 
-.challenge-two-container {
+/* .challenge-two-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100vh;
   border-bottom: 2px solid black;
-}
+} */
 
 .c-two-image {
   border-left: 2px solid black;
@@ -162,12 +184,6 @@ h2 {
 }
 
 /* Challenge Three Container */
-.challenge-three-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 100vh;
-  border-bottom: 2px solid black;
-}
 
 .c-three-image {
   background-color: #141414;
