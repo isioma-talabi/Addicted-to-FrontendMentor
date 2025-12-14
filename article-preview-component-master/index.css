@@ -19,16 +19,17 @@ body {
 .container-card {
   display: flex;
   justify-content: space-between;
-  /* gap: 40px; */
   width: 690px;
   height: 280px;
   background-color: white;
+  border-radius: 10px;
 }
 
 .main-image-container {
   overflow: hidden;
   width: 275px;
   height: 280px;
+  border-radius: 10px 0 0 10px;
 }
 
 .main-image {
@@ -103,16 +104,14 @@ h1 {
   border-radius: 40px;
   background-color: #ecf2f8;
   text-align: center;
+  cursor: pointer;
 }
 
 .share-img {
   display: inline;
   width: 15px;
   height: 12px;
-}
-
-#js-toggle-pop-up {
-  display: none;
+  fill: #ecf2f8;
 }
 
 .share-pop-up-container {
@@ -145,4 +144,122 @@ h1 {
   display: inline;
   text-align: center;
   margin-top: 3px;
+}
+
+/* Toggle Styles */
+
+.hide-pop-up {
+  display: none;
+}
+
+.toggle-color {
+  background-color: #6e8098;
+}
+
+.toggle-svg-color {
+  fill: white;
+}
+
+/* Mobile View Share Container */
+.mobile-view-share-elements-container {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 650px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    width: 330px;
+    height: 540px;
+  }
+
+  .main-image-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .text-container {
+    margin: 32px 30px 18px 30px;
+  }
+
+  .text-break-none {
+    display: none;
+  }
+
+  .small-intro-text {
+    margin-bottom: 0px;
+  }
+
+  .avatar-name-share-container {
+    margin-top: 45px;
+  }
+
+  .mobile-view-share-elements-container {
+    display: none;
+    background-color: #48556a;
+    margin-top: 5px;
+    border-radius: 0px 0px 10px 10px;
+    height: 85px;
+    width: 100%;
+  }
+
+  .mv-core-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 30px 22px 30px;
+  }
+  .mobile-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .share-tag {
+    display: inline;
+    align-self: center;
+  }
+
+  .mb-facebook-icon,
+  .mb-twitter-icon,
+  .mb-pinterest-icon {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    align-self: center;
+  }
+
+  .mobile-share-icon {
+    align-content: center;
+    background-color: #6e8098;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    text-align: center;
+  }
+
+  .share-img {
+    display: inline;
+  }
+  /* Hide and Display Styles */
+  .hide-container {
+    display: none;
+  }
+
+  .show-container {
+    display: block;
+  }
+
+  .share-elements-container {
+    display: none;
+  }
+
+  .share-pop-up-container {
+    display: none;
+  }
 }

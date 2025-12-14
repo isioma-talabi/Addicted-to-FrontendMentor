@@ -32,18 +32,20 @@
 
       <div class="text-container">
         <h1>
-          Shift the overall look and feel by <br />
-          adding these wonderful touches to <br />
+          Shift the overall look and feel by <br class="text-break-none" />
+          adding these wonderful touches to <br class="text-break-none" />
           furniture in your home
         </h1>
 
         <p class="small-intro-text">
-          Ever been in a room and felt like something was missing? <br />
-          Perhaps it felt slightly bare and uninviting. I’ve got some <br />
+          Ever been in a room and felt like something was missing?
+          <br class="text-break-none" />
+          Perhaps it felt slightly bare and uninviting. I’ve got some
+          <br class="text-break-none" />
           simple tips to help you make any room feel complete.
         </p>
 
-        <div class="avatar-name-share-container">
+        <div class="avatar-name-share-container" id="js-avatar-name-container">
           <div class="avatar-name-container">
             <div>
               <img
@@ -58,12 +60,25 @@
             </div>
           </div>
 
-          <div class="share-img-container">
-            <img class="share-image" src="./assets/icon-share.svg" alt="" />
+          <div id="js-share-img-container" class="share-img-container">
+            <svg
+              class="share-image"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+            >
+              <path
+                id="js-share-image"
+                fill="#6E8098"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
           </div>
         </div>
 
-        <div id="js-toggle-pop-up">
+        <!-- Share Pop Up- Desktop View -->
+
+        <div id="js-toggle-pop-up" class="hide-pop-up">
           <div class="share-pop-up-container">
             <img
               class="share-pop-up"
@@ -72,14 +87,56 @@
             />
           </div>
           <div class="share-elements-container">
-             <p class="share-tag">SHARE</p>
-            <img src="./assets/icon-facebook.svg" alt="">
-            <img class="twitter-icon" src="./assets/icon-twitter.svg" alt="">
-            <img src="./assets/icon-pinterest.svg" alt="">
+            <p class="share-tag">SHARE</p>
+            <img src="./assets/icon-facebook.svg" alt="" />
+            <img class="twitter-icon" src="./assets/icon-twitter.svg" alt="" />
+            <img src="./assets/icon-pinterest.svg" alt="" />
           </div>
         </div>
+      </div>
 
-       
+      <!-- For Mobile Display -->
+      <div
+        class="mobile-view-share-elements-container"
+        id="js-mobile-view-share-container"
+      >
+        <div class="mv-core-container">
+          <div class="mobile-icons">
+            <p class="share-tag">SHARE</p>
+            <img
+              class="mb-facebook-icon"
+              src="./assets/icon-facebook.svg"
+              alt=""
+            />
+            <img
+              class="mb-twitter-icon"
+              src="./assets/icon-twitter.svg"
+              alt=""
+            />
+            <img
+              class="mb-pinterest-icon"
+              src="./assets/icon-pinterest.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="mobile-share-icon" id="js-mobile-share-icon">
+            <div>
+              <svg
+                class="share-image"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+              >
+                <path
+                  id="js-share-image"
+                  fill="#fff"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -91,5 +148,7 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer> -->
+
+    <script src="./index.js"></script>
   </body>
 </html>
