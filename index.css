@@ -212,6 +212,19 @@ h2 {
   place-content: center center;
 }
 
+/* Challenge Five Container */
+.c-five-image {
+  background-color: #ecf2f8;
+  display: grid;
+  place-content: center center;
+  border-right: 2px solid black;
+}
+
+.challenge-five-image {
+  height: 600px;
+  border-radius: 5px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
@@ -238,6 +251,8 @@ h2 {
     height: 150px;
   }
 
+  /* Challenge One */
+
   .challenge-one-container {
     grid-template-columns: 1fr;
     height: 800px;
@@ -247,6 +262,7 @@ h2 {
     height: 300px;
   }
 
+  /* Challenge Two */
   .challenge-two-container {
     grid-template-columns: 1fr;
     height: 1000px;
@@ -259,6 +275,8 @@ h2 {
   .c-two-image {
     border-left: none;
   }
+
+  /* Challenge Three */
 
   .challenge-three-container {
     grid-template-columns: 1fr;
@@ -273,7 +291,18 @@ h2 {
     padding-left: 0;
   }
 
+  /* Challenge Four */
+
   .c-four-image {
     border-left: none;
+  }
+
+  /* Challenge Five */
+  .c-five-image {
+    border-right: none;
+  }
+
+  .challenge-five-image {
+    height: 400px;
   }
 }
